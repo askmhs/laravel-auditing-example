@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Laravel Auditing Example",
+		"_postman_id": "4af5eb98-e7ae-b2ad-0a4a-343be75e69c1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Product",
+			"request": {
+				"url": "localhost:8000/api/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Product 2\",\n\t\"stock\": 98,\n\t\"price\": 3500\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"url": "localhost:8000/api/products/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Product 1 Update\",\n\t\"stock\": 100,\n\t\"price\": 23500\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get List Product",
+			"request": {
+				"url": "localhost:8000/api/products",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Product 1\",\n\t\"stock\": 100,\n\t\"price\": 23500\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Product",
+			"request": {
+				"url": "localhost:8000/api/products/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Product 1\",\n\t\"stock\": 100,\n\t\"price\": 23500\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
